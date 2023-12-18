@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MaSampah</string>
+    <string name="maskot1">Sampahku Emasku</string>
+    <string name="maskot2">Cukup kumpulkan, timbang dan raih poin berlimpah yang siap ditukarkan.</string>
+
+
+    <string name="welcome">Selamat Datang</string>
+    <string name="welcome2">Masukan username dan password untuk bisa menggunkan aplikasi</string>
+    <string name="welcome3">Welcome</string>
+    <string name="username">Username</string>
+    <string name="username2">Masukan  Username</string>
+    <string name="pass">Password</string>
+    <string name="pass2">Masukan  Password</string>
+    <string name="account">Already have an account? Sign in</string>
+
+    <string name="success">Berhasil !</string>
+    <string name="success2">Registrasinya Sukses Bu</string>
+
+    <string name="next">Next</string>
+    <string name="signIn">Sign In</string>
+    <string name="kirim">Kirim</string>
+    <string name="tukar">Tukar</string>
+
+    <string name="home">Home</string>
+    <string name="jenis">Jenis Sampah</string>
+    <string name="tukar_point">Tukar Poin</string>
+    <string name="hasil">Hasil Poin</string>
+    <string name="transaksi">Transaksi </string>
+    <string name="riwayat">Riwayat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

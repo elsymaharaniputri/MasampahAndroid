@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/small_logo"
+            />
+
+        <TextView
+            android:id="@+id/textLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img1"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/primary"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Layout"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Daftarkan diri anda untuk bisa menggunakan layanan aplikasi ini"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        />
+
+    <LinearLayout
+        android:id="@+id/LayoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+
+        >
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/inputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/username2"
+            android:padding="15dp"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Masukan Password"
+            android:padding="15dp"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/noRekamedik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/inputRegisAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Masukan Alamat"
+            android:padding="15dp"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/inputRegisHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Masukan Nomor Hp"
+            android:padding="15dp"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutForm"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

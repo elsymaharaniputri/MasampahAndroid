@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.antrigi.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/historyFragment3"
+        android:name="com.example.antrigi.HistoryFragment"
+        android:label="fragment_history3"
+        tools:layout="@layout/fragment_history3" />
+    <fragment
+        android:id="@+id/tukarFragment"
+        android:name="com.example.antrigi.TukarFragment"
+        android:label="fragment_tukar"
+        tools:layout="@layout/fragment_tukar" />
+</navigation>
